@@ -25,7 +25,8 @@ func main() {
 
 	part1 := sl1[4:6]
 	fmt.Println(part1) // [4,5]
-	part1 = append(part1, 6)
+	//part1 = append(part1, 6)
 	part1[1] = 6
+	fmt.Println(part1)
 	fmt.Println(sl1)
 }

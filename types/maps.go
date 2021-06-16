@@ -7,17 +7,18 @@ var (
 	//mMap map[map[int]int]int  not comparable
 	//mSlice map[[]int]int
 	//mFunc map[func()]int
+	//mStruct map[Man]int
 )
 
 func main() {
-	mapEx := map[int]string{1: "1", 2: "2", 3: "3"}
-	fmt.Println(mapEx[4])
+	mapEx := map[string]string{"1": "1", "2": "2", "3": "3"}
+	fmt.Println(mapEx["4"])
 
-	val, ok := mapEx[4]
+	val, ok := mapEx["4"]
 	fmt.Println(val, ok) // извлечение
 
-	//delete(mapEx,1) // удаление
-	mapEx[4] = "4" // вставка
+	delete(mapEx, "1") // удаление
+	mapEx["4"] = "4"   // вставка
 
 	//fmt.Println(&mapEx[1])
 

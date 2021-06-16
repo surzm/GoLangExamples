@@ -24,8 +24,8 @@ func main() {
 	fmt.Println(str1, len(str1), utf8.RuneCountInString(str1))
 
 	//for i, v := range str1 {
-		//fmt.Println(v)
-		//fmt.Printf("%d %s \n", i, string(v))
+	//	fmt.Println(v)
+	//	fmt.Printf("%d %s \n", i, string(v))
 	//}
 	fmt.Printf("%s %s \n", "Helloo", "world")
 	fmt.Println(unirune + " hello")

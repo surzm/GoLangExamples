@@ -41,7 +41,7 @@ Loop1:
 		}
 	}
 
-	// variadic func
+	//variadic func
 	nums := []int{1, 2, 3, 4}
 	sum(nums...)
 	sum(1, 2, 3, 4)

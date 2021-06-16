@@ -30,7 +30,7 @@ func (p Person) ChildCount() int {
 }
 
 type PersInterface interface {
-	//AddChild(child Child)
+	AddChild(child Child)
 	ChildCount() int
 }
 
@@ -49,12 +49,12 @@ func main() {
 		},
 	}}
 
-	//per.addChild(Child{
-	//	Name: "333",
-	//	Old:  33,
-	//})
+	per.AddChild(Child{
+		Name: "333",
+		Old:  33,
+	})
 
-	testFunc(per)
+	testFunc(&per)
 	fmt.Printf("%+v", per)
 	fmt.Println(per.ChildCount())
 }
