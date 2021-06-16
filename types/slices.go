@@ -13,8 +13,6 @@ func main() {
 	fmt.Println(initSl)
 	fmt.Println(newSl)
 
-var dd [3]int64
-	fmt.Println("DD ",dd)
 	capSl := make([]int, 10)
 	fmt.Println(capSl)
 	capSl = make([]int, 0, 10)
